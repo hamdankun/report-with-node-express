@@ -9,7 +9,7 @@ Express version 4.16.3
 ## How To Install
 - cd [PROJECT DIRECTORY]
 - npm install or yarn install
-- npm run dev or yarn dev
+- npm run serve or yarn serve
 
 
 ## Author
