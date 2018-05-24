@@ -1,0 +1,17 @@
+{
+  "name": "employee-candiadate-test",
+  "version": "1.0.0",
+  "description": "Employe Candiadate Test For Passed",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "nodemon ./server.js"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mysql2": "^1.5.3",
+    "nodemon": "^1.17.4",
+    "sequelize": "^4.37.8"
+  }
+}

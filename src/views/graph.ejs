@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Graph Report</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class='container'>
+    <div class='flex-row'>
+        <div class='resource-json'>
+            <a href="/report/device" target="_blank"><h3>JSON Pie Graph</h3></a>
+            <a href="/report/range-date?start=2017-01-01&end=2018-12-12" target="_blank"><h3>JSON Line Graph</h3></a>
+        </div>
+        <div id='pie-graph'></div>
+        <div id='line-graph'></div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js'></script>
+    <script>
+        var pies = JSON.parse('<%- JSON.stringify(graphData[0]) %>');        
+        var lines = JSON.parse('<%- JSON.stringify(graphData[1]) %>');    
+    </script>
+    <script src='/script.js'></script>
+</body>
+
+</html>
